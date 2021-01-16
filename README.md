@@ -35,6 +35,10 @@ Run with attached folder: `docker run -it --rm -v E:\programming\c++\mosze\conso
 
 `docker rmi google_test`
 
+### Delete running container
+
+`docker rm 7738b9fbd830`
+
 ## Examples
 
 ```Dockerfile
