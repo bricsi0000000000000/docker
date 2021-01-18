@@ -6,7 +6,9 @@ RUN apt update \
     bash \
     wget \
     git \
-    nano
+    nano \
+    g++ \
+    gcc
 
 COPY install.sh ./
 RUN chmod +x install.sh

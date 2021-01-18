@@ -2,8 +2,8 @@ FROM ubuntu:latest
 
 RUN apt update \
  && apt upgrade -y \
- && apt install -y software-properties-common \
- && add-apt-repository ppa:deadsnakes/ppa \
+ && DEBIAN_FRONTEND=noninteractive apt install -y software-properties-common \
+ && DEBIAN_FRONTEND=noninteractive add-apt-repository ppa:deadsnakes/ppa \
  && apt update -y
 
 RUN apt install -y \
