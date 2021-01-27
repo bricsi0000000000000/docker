@@ -22,7 +22,7 @@ RUN python3.6 -m pip install --user --upgrade tensorflow==1.12.0
 
 RUN apt install -y libopencv-dev python3-opencv
 
-#COPY ai ./
+COPY ai ./
 
 RUN rm -rf /var/lib/apt/lists/*
 
